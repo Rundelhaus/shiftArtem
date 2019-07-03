@@ -12,4 +12,6 @@ public interface SampleEntityService {
     SampleEntity get(Long id) throws ObjectNotFoundException;
 
     Collection<SampleEntity> getOrders();
+
+    SampleEntity add(SampleEntity sampleEntity);
 }

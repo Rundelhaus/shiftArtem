@@ -35,4 +35,10 @@ public class SampleEntityServiceImpl implements SampleEntityService {
         return sampleEntityRepository.getOrders();
     }
 
+    @Override
+    public SampleEntity add(SampleEntity sampleEntity) {
+        sampleEntity.setBaz(UUID.randomUUID());
+        return sampleEntityRepository.add(sampleEntity);
+    }
+
 }
